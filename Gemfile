@@ -20,6 +20,10 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :development, :test do
+  gem 'rspec-rails', '~> 2.0'
+end
+
 gem 'haml', '~> 3.2.0.rc.1'
 gem 'jquery-rails'
 
