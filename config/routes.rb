@@ -1,7 +1,7 @@
 Sf::Application.routes.draw do
   get 'pkg' => 'package#index'
 
-  root to: 'root#index'
+  root to: 'factory#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
