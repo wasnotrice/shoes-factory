@@ -1,7 +1,7 @@
 ShoesFactory::Application.routes.draw do
   get 'pkg' => 'package#new'
 
-  get 'profile' => 'profile#profile'
+  get 'profile' => 'factory#profile'
 
   root to: 'factory#index'
   # The priority is based upon order of creation: first created -> highest priority.
