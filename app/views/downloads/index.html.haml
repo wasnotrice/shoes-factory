@@ -1,0 +1,9 @@
+%h1 Downloads
+
+%h2 JRuby
+
+%ul.downloads
+  - @jruby_downloads.each do |file|
+    %li.download
+      %a{href: file.url, rel: "download"} #{file.name}
+

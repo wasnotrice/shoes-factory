@@ -1,6 +1,8 @@
 ShoesFactory::Application.routes.draw do
   get 'pkg' => 'package#new'
 
+  get 'dl' => 'downloads#index'
+
   get 'profile' => 'factory#profile'
 
   root to: 'factory#index'
