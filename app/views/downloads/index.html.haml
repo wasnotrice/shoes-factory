@@ -2,8 +2,10 @@
 
 %h2 JRuby
 
-%ul.downloads
+%ul.jruby.downloads
   - @jruby_downloads.each do |file|
     %li.download
       %a{href: file.url, rel: "download"} #{file.name}
+
+= link_to 'home', '/'
 
