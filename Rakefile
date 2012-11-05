@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Sf::Application.load_tasks
+ShoesFactory::Application.load_tasks

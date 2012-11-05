@@ -1,4 +1,5 @@
 class PackageController < ApplicationController
-  def index
+  def new
   end
 end
+

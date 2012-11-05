@@ -9,4 +9,4 @@
 
 # Make sure your secret_token is kept private
 # if you're sharing your code publicly.
-Sf::Application.config.secret_token = 'a55da2a48c0d2f6ad5fd09f843acdf23d69f0b85b291cab69bcac50e89e0ba5659d27353c999d217eaf9ab66aa14026633f425f290074dc42c3fe518aeb1d84e'
+ShoesFactory::Application.config.secret_token = 'a55da2a48c0d2f6ad5fd09f843acdf23d69f0b85b291cab69bcac50e89e0ba5659d27353c999d217eaf9ab66aa14026633f425f290074dc42c3fe518aeb1d84e'
