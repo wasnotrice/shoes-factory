@@ -7,5 +7,24 @@
     %li.download
       %a{href: file.url, rel: "download"} #{file.name}
 
+%h2 Application wrappers
+
+%h3 Mac
+
+%ul.application-wrappers.mac.downloads
+  - @application_wrapper_downloads.each do |file|
+    %li.download
+      %dl
+        %dt
+          %a{href: file.url, rel: "download"}
+            %span.name #{file.name}
+        %dd.description
+          An
+          %code .app
+          wrapper for
+          %code .jar
+          files. Use this to package your app for the Mac platform, using a
+          JRuby backend (e.g. Swt)
+
 = link_to 'home', '/'
 
