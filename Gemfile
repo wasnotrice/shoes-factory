@@ -22,6 +22,7 @@ end
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
+  gem 'capybara', '~> 1.1.3'
 end
 
 gem 'haml', '~> 3.2.0.rc.1'
