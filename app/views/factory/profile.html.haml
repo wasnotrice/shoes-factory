@@ -1,23 +1,64 @@
 %dl.profile
-  %dt#class class
+  %dt#class
+    Valid values for
+    %code class
+    attributes
   %dd
     %dl
 
-  %dt#name name
+  %dt#name
+    Valid values for
+    %code name
+    attributes. These will be found on form input elements, so they will help
+    you create
+    %code POST
+    requests to the service.
   %dd
     %dl
-      %dt#platform platform
+      %dt#platform
+        %code platform
       %dd
-        Applied to INPUT[checkbox]. A target platform. Possible values include:
+        Applied to
+        %code INPUT[checkbox]
+        \. A target platform. Possible values include:
         %ul
-          %li mac
-          %li windows
-          %li linux
+          %li
+            %code mac
+          %li
+            %code windows
+          %li
+            %code linux
 
-  %dt#rel rel
+  %dt#rel
+    Valid values for
+    %code rel
+    attributes. These values indicate hyperlinks to other resources, which you
+    can grab from the corresponding
+    %code href
+    attribute. Take this link as an example:
+    %pre
+      %code
+        :escaped
+          <a href="/pkg" rel="packages">Packages</a>
+    \You would identify the link by finding
+    %code rel="packages"
+    and then follow the
+    %code /pkg
+    URL to find the "Packages" resource.
   %dd
     %dl
-      %dt#packages packages
+      %dt#downloads
+        %code downloads
+      %dd A reference to the list of available downloads
+
+      %dt#package
+        %code package
+      %dd A reference to the form for submitting an application to be packaged
+
+      %dt#packages
+        %code packages
       %dd A reference to the list of available packages
-      %dt#target-platforms platforms
+
+      %dt#target-platforms
+        %code platforms
       %dd A reference to the list of supported target platforms
