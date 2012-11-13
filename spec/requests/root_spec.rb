@@ -17,8 +17,15 @@ describe "root url" do
     end
   end
 
+  describe "rel='downloads'" do
+    let(:link) { page.find(:css, "a[@rel='downloads']") }
 
-  it "has link with rel='downloads'" do
-    page.should have_selector("a[@rel='downloads']")
+    it "exists" do
+      link.should_not be_nil
+    end
+
+    it "maps to /dl" do
+      link['href'].should eq('/dl')
+    end
   end
 end
